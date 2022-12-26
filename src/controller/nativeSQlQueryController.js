@@ -3,10 +3,7 @@ const { connection } = require("../../db");
 
 const createSchema = async (req, res) => {
   try {
-    const createTable = await connection.query(
-      "create table user(id int primary key,first_name varchar(20),last_name varchar(15),email varchar(55))"
-    );
-    console.log(createTable);
+    
   } catch (error) {
     console.log(error);
   }
